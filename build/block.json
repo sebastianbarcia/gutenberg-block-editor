@@ -1,0 +1,50 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "create-block/mi-primer-bloque",
+  "version": "0.1.0",
+  "title": "Mi Primer Bloque",
+  "category": "design",
+  "icon": "smiley",
+  "description": "Example block scaffolded with Create Block tool.",
+  "example": {},
+  "supports": {
+    "html": false,
+    "align": true,
+    "color": {
+      "background": true,
+      "gradients": true,
+      "text": true
+    },
+    "spacing": {
+      "padding": true,
+      "margin": true
+    },
+    "typography": {
+      "fontSize": true
+    }
+  },
+  "textdomain": "mi-primer-bloque",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./view.js",
+  "attributes": {
+    "titulo": {
+      "type": "string",
+      "default": "Titulo del bloque"
+    },
+    "texto": {
+      "type": "string",
+      "default": "Texto del bloque"
+    },
+    "showTitle": {
+      "type": "boolean",
+      "default": true
+    },
+    "quantity": {
+      "type": "number",
+      "default": 1
+    }
+  }
+}
